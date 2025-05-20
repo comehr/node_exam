@@ -4,6 +4,14 @@ CREATE DATABASE IF NOT EXISTS CRPMS;
 -- Use the database
 USE CRPMS;
 
+
+CREATE TABLE Users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+
+);
+
 -- 1. Create Services Table
 CREATE TABLE Services (
     ServiceCode VARCHAR(10) PRIMARY KEY,
